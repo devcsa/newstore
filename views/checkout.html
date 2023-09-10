@@ -6,13 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
-      <link rel="stylesheet" type="text/css" href="./css/index.css" />
+      <link rel="stylesheet" type="text/css" href="./static/css/index.css" />
 
-      <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="./static/img/favicon.png" type="image/x-icon" />
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://sdk.mercadopago.com/js/v2"></script>
-      <script type="text/javascript" src="./js/index.js" defer></script>
+      <script type="text/javascript" src="./static/js/index.js" defer></script>
    </head>
    <body>
       <input id="mercado-pago-public-key" value="{{mercadoPagoPublicKey}}" type="hidden" />
@@ -33,7 +33,7 @@
                                  <div class="product-details">
                                     <div class="row justify-content-md-center">
                                        <div class="col-md-3">
-                                          <img class="img-fluid mx-auto d-block image" src="./img/product.png" />
+                                          <img class="img-fluid mx-auto d-block image" src="./static/img/product.png" />
                                        </div>
                                        <div class="col-md-4 product-detail">
                                           <h5>Produtos</h5>
@@ -160,7 +160,7 @@
                                  <div class="product-info">
                                     <div id="fail-response">
                                        <br />
-                                       <img src="./img/fail.png" width="350px" />
+                                       <img src="./static/img/fail.png" width="350px" />
                                        <p class="text-center font-weight-bold">Erro no Processamento</p>
                                        <p id="error-message" class="text-center"></p>
                                        <br />
@@ -184,9 +184,13 @@
          </section>
       </main>
       <footer>
+<<<<<<< HEAD
          <div class="footer_logo">
             <a href="/"><img id="horizontal_logo" src="./img/logo.png" /></a>
          </div>
+=======
+         <div class="footer_logo"><img id="horizontal_logo" src="./static/img/logo.png" /></div>
+>>>>>>> b35966c2291f48751c6a0b752626c5bfb76b2d49
          <div class="footer_text">
             <p>Desenvolvido por:</p>
             <p><a href="https://www.csadev.com.br/" target="_blank">https://www.csadev.com.br/</a></p>
