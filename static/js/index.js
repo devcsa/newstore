@@ -98,7 +98,10 @@ function loadCardForm() {
                   if (!result.hasOwnProperty("error_message")) {
                      document.getElementById("success-response").style.display = "block";
                      document.getElementById("payment-id").innerText = result.id;
-                     document.getElementById("payment-status").innerText = result.status;
+                     if (result.status == "approved") {
+                        document.getElementById("payment-status").innerText = "Aprovado";
+                     }
+
                      document.getElementById("payment-detail").innerText = result.detail;
                   } else {
                      document.getElementById("error-message").textContent = result.error_message;
